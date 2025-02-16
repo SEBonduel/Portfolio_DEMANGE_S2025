@@ -28,7 +28,7 @@ const Home = () => {
       }, 80);
     };
 
-    const glitchInterval = setInterval(glitchEffect, 3000);
+    const glitchInterval = setInterval(glitchEffect, 1800);
 
     return () => {
       clearInterval(glitchInterval);
