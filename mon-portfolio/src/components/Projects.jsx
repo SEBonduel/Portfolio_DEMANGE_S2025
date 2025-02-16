@@ -22,13 +22,13 @@ const projects = [
   {
     title: "Password Generator",
     description: "Générateur de mots de passe aléatoires avec choix du nombre de caractères réalisé avec ReactJS.",
-    link: "https://see-wea-ther.netlify.app",
+    link: "https://generateur-mot-de-passe.netlify.app",
     image: "/Medias/PasswordGenerator.png",
   },
   {
     title: "Portfolio 2024",
     description: "Mon 2ème portfolio, celui avec lequel j'ai commencé à apprendre les animations dynamiques.",
-    link: "https://sebastiendemange2k24.netlify.app",
+    link: "https://sebastiendemange.netlify.app",
     image: "/Medias/portfolio2024.png",
   },
   {
@@ -40,13 +40,13 @@ const projects = [
   {
     title: "Spot'Elec",
     description: "Site vitrine pour un ami auto-entrepreneur électricien.",
-    link: "#",
+    link: "https://www.spotelec.fr/",
     image: "/Medias/spotelec.png",
   },
   {
     title: "Portfolio 2022",
     description: "Mon 1er portfolio, réalisé avec HTML, CSS et JavaScript.",
-    link: "#",
+    link: "https://sebastiendemange2k22.netlify.app/",
     image: "/Medias/portfolio2022.png",
   },
 ];
