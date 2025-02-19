@@ -41,7 +41,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="flex flex-row items-center justify-center w-screen h-screen bg-[url('../Medias/background-pc.jpg')] bg-cover bg-center bg-no-repeat"> 
+    <section className="flex flex-row items-center justify-center w-screen h-screen bg-[url('../Medias/background-pc.jpg')] bg-cover bg-center bg-no-repeat" id="About"> 
       <div className="absolute inset-0 bg-black opacity-40 z-1"></div>
       <div className="flex flex-col items-start justify-center md:w-[625px] mb-8 mr-8 z-50">
         <motion.h1
@@ -142,7 +142,7 @@ const Home = () => {
           d&#39;intérêt.</p>
 
         <p className="text-gray-200 text-start z-50 leading-relaxed">Si vous êtes intéressé à travailler avec moi ou à explorer de nouvelles opportunités de collaboration, n&#39;hésitez pas à me contacter.
-          Merci d&#39;avoir pris le temps de découvrir mon portfolio, 
+          Merci de prendre le temps de découvrir mon portfolio, 
           j&#39;espère que vous apprécierez ce que vous y trouverez et que vous serez inspiré par mes projets et mes réalisations.</p>
       </motion.div>
 
@@ -151,6 +151,8 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ y: [0, 10, 0],  opacity: 1 }}
         transition={{ repeat: Infinity, duration: 2, delay:2 }}
+        onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
+        cursor="pointer"
       >
         <PiMouseSimpleThin className="text-6xl text-gray-300" />
       </motion.div>

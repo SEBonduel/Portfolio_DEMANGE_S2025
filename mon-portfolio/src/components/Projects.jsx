@@ -53,7 +53,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="bg-black w-screen min-h-screen text-gray-300 flex flex-col items-center justify-center p-8">
+    <section className="bg-black w-screen min-h-screen text-gray-300 flex flex-col items-center justify-center p-8"id="Project">
       <motion.h2
         className="text-4xl md:text-6xl font-medium font-orbitron  mb-16 mt-16"
         initial={{ opacity: 0, y: -50 }}
