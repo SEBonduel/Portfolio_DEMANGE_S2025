@@ -42,7 +42,7 @@ const BurgerNavbar = () => {
               <h2 className="text-2xl mb-8"> Sébastien Demange</h2>
               <ul className="space-y-4">
                 <li><a href="#About" onClick={toggleMenu}>À Propos de moi</a></li>
-                <li><a href="#Project" onClick={toggleMenu}>Projets</a></li>
+                <li><a href="#Project" onClick={toggleMenu}>Mes Projets</a></li>
                 <li><a href="#" onClick={toggleMenu}>?</a></li>
                 <li><a href="#" onClick={toggleMenu}>?</a></li>
                 <li><a href="#" onClick={toggleMenu}>?</a></li>
