@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <section className="flex flex-row items-center justify-center w-screen h-screen bg-[url('../Medias/background-pc.jpg')] bg-cover bg-center bg-no-repeat" id="About"> 
       <div className="absolute inset-0 bg-black opacity-40 z-1"></div>
-      <div className="flex flex-col items-start justify-center md:w-[625px] mb-8 mr-8 z-50">
+      <div className="flex flex-col items-start justify-center md:w-[650px] mb-8 mr-8 z-50">
         <motion.h1
           className="text-xl md:text-6xl font-bold text-glitch relative"
           initial={{ opacity: 0, y: -100 }}
