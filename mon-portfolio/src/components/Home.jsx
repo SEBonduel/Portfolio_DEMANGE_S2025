@@ -72,7 +72,7 @@ const Home = () => {
             href="https://www.linkedin.com/in/s%C3%A9bastien-demange-5a4b03243/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-gray-300 hover:text-blue-500 hover:scale-110 text-3xl trasition-all duration-300"
+            className="text-gray-300 hover:text-blue-500 hover:scale-110 text-3xl transition-all duration-300"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 2 }}
@@ -83,7 +83,7 @@ const Home = () => {
 
           <motion.a 
             href="mailto:sebastien050599@hotmail.fr" 
-            className="text-gray-300 hover:text-red-500 text-3xl hover:scale-110 trasition-all duration-300"
+            className="text-gray-300 hover:text-red-500 text-3xl hover:scale-110 transition-all duration-300"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 2, duration: 2 }}
@@ -95,7 +95,7 @@ const Home = () => {
             href="https://github.com/SEBonduel" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-gray-300 hover:text-green-500 text-3xl hover:scale-110 trasition-all duration-300"
+            className="text-gray-300 hover:text-green-500 text-3xl hover:scale-110 transition-all duration-300"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 2.5, duration: 2 }}
@@ -108,7 +108,7 @@ const Home = () => {
             download
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-purple-500 text-3xl hover:scale-110 trasition-all duration-300"
+            className="text-gray-300 hover:text-purple-500 text-3xl hover:scale-110 transition-all duration-300"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 3, duration: 2 }}
