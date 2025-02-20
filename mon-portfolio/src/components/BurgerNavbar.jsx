@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const about = "src/assets/icons/user.svg";
+const projects = "src/assets/icons/projects.svg";
+const skills = "src/assets/icons/skills.svg";
+const contact = "src/assets/icons/contact.svg"; 
+
 const BurgerNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,6 +33,8 @@ const BurgerNavbar = () => {
         </div>
       </button>
 
+      {isOpen && <div className="fixed inset-0 bg-black/30 backdrop-blur-md z-[100]" onClick={toggleMenu} />}
+    
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -40,13 +47,13 @@ const BurgerNavbar = () => {
             <div className="p-7 ml-6">
               
               <h2 className="text-2xl mb-8"> Sébastien Demange</h2>
-              <ul className="space-y-4 text-start ml-8">
-                <li><a href="#About" onClick={toggleMenu}>À Propos de moi</a></li>
-                <li><a href="#Project" onClick={toggleMenu}>Mes Projets</a></li>
-                <li><a href="#Skills" onClick={toggleMenu}>Mes Compétences</a></li>
-                <li><a href="#" onClick={toggleMenu}>?</a></li>
-                <li><a href="#" onClick={toggleMenu}>?</a></li>
-                <li><a href="#" onClick={toggleMenu}>?</a></li>
+              <ul className="space-y-4 text-start ml-8 flex flex-col">
+                <li><a href="#About" onClick={toggleMenu} className='flex flex-row items-center'><img src={about} className="w-8 h-8 mr-2"/>À Propos de moi</a></li>
+                <li><a href="#Project" onClick={toggleMenu} className='flex flex-row items-center'><img src={projects} className="w-8 h-8 mr-2" />Mes Projets</a></li>
+                <li><a href="#Skills" onClick={toggleMenu} className='flex flex-row items-center'><img src={skills}  className="w-8 h-8 mr-2" />Mes Compétences</a></li>
+                <li><a href="#Contact" onClick={toggleMenu} className='flex flex-row items-center'><img src={contact}  className="w-8 h-8 mr-2" />Me Contacter</a></li>
+                <li><a href="#" onClick={toggleMenu} className='flex flex-row items-center'>?</a></li>
+                <li><a href="#" onClick={toggleMenu} className='flex flex-row items-center'>?</a></li>
               </ul>
             </div>
           </motion.div>
