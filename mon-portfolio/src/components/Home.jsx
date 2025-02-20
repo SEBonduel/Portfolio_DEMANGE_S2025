@@ -154,7 +154,7 @@ const Home = () => {
         onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
         cursor="pointer"
       >
-        <PiMouseSimpleThin className="text-6xl text-gray-300" />
+        <PiMouseSimpleThin className="text-7xl text-gray-300 hover:cursor-pointer hover:scale-110 transition-all hover:text-green-500" />
       </motion.div>
     </section>
   );
