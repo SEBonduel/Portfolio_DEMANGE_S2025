@@ -68,7 +68,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className=" bg-gray-900 bg-opacity-60 rounded-2xl shadow-xl border-2 border-neon rounded-2xl p-8 ml-4 mr-4 mb-8 hover:shadow-2xl hover:border-neon hover:border-4 hover:bg-opacity-80 transition-all"
+            className="bg-gray-900 bg-opacity-60 rounded-2xl shadow-xl border-[0.1px] border-neon rounded-2xl p-8 ml-4 mr-4 mb-8 hover:bg-opacity-20 transition-all"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 * index, duration: 0.8 }}
