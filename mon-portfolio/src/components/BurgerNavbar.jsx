@@ -48,12 +48,12 @@ const BurgerNavbar = () => {
               
               <h2 className="text-2xl mb-8"> Sébastien Demange</h2>
               <ul className="space-y-4 text-start ml-8 flex flex-col">
-                <li><a href="#About" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all'><img src={about} className="w-8 h-8 mr-2"/>À Propos de moi</a></li>
-                <li><a href="#Project" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all'><img src={projects} className="w-8 h-8 mr-2" />Mes Projets</a></li>
-                <li><a href="#Skills" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all'><img src={skills}  className="w-8 h-8 mr-2" />Mes Compétences</a></li>
-                <li><a href="#Contact" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all'><img src={contact}  className="w-8 h-8 mr-2" />Me Contacter</a></li>
-                <li><a href="#" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all'>?</a></li>
-                <li><a href="#" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all'>?</a></li>
+                <li><a href="#About" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={about} className="w-8 h-8 mr-2"/>À Propos de moi</a></li>
+                <li><a href="#Project" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={projects} className="w-8 h-8 mr-2" />Mes Projets</a></li>
+                <li><a href="#Skills" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={skills}  className="w-8 h-8 mr-2" />Mes Compétences</a></li>
+                <li><a href="#Contact" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={contact}  className="w-8 h-8 mr-2" />Me Contacter</a></li>
+                <li><a href="#" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'>?</a></li>
+                <li><a href="#" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'>?</a></li>
               </ul>
             </div>
           </motion.div>
