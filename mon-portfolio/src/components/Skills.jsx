@@ -50,8 +50,8 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="p-8">
-      <h2 className="text-4xl font-bold text-center mb-12">Compétences</h2>
+    <section className="p-8 z-[50] bg-[url('../Medias/Project_bg.jpg')] bg-cover bg-center bg-no-repeat" id='Skills'>
+      <h2 className="text-4xl md:text-6xl font-medium font-orbitron mb-12">Mes Compétences</h2>
       <div className="grid gap-12">
         {skills.map((group) => (
           <div key={group.category}>

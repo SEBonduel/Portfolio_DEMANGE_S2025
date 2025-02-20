@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "@fontsource/orbitron";
+
 const projects = [
   {
     title: "See Weather",
@@ -53,9 +54,9 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="bg-black w-screen min-h-screen text-gray-300 flex flex-col items-center justify-center p-8"id="Project">
+    <section className="bg-black w-screen min-h-screen text-gray-300 flex flex-col items-center justify-center p-8 pb-16"id="Project">
       <motion.h2
-        className="text-4xl md:text-6xl font-medium font-orbitron  mb-16 mt-16"
+        className="text-4xl md:text-6xl font-medium font-orbitron  mb-8 mt-8"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -63,11 +64,11 @@ const Projects = () => {
         Mes Projets
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-9xl mt-10 ml-4 mr-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-9xl mt-10 mb-10 ml-8 mr-8 pl-8 pr-8">
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className=" bg-gray-900 bg-opacity-60 rounded-2xl shadow-xl  border-2 border-neon rounded-2xl p-8 ml-4 mr-4 hover:shadow-2xl hover:border-neon hover:border-4 hover:bg-opacity-80 transition-all"
+            className=" bg-gray-900 bg-opacity-60 rounded-2xl shadow-xl border-2 border-neon rounded-2xl p-8 ml-4 mr-4 mb-8 hover:shadow-2xl hover:border-neon hover:border-4 hover:bg-opacity-80 transition-all"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 * index, duration: 0.8 }}

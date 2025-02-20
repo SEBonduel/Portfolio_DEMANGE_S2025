@@ -40,10 +40,10 @@ const BurgerNavbar = () => {
             <div className="p-7 ml-6">
               
               <h2 className="text-2xl mb-8"> Sébastien Demange</h2>
-              <ul className="space-y-4">
+              <ul className="space-y-4 text-start ml-8">
                 <li><a href="#About" onClick={toggleMenu}>À Propos de moi</a></li>
                 <li><a href="#Project" onClick={toggleMenu}>Mes Projets</a></li>
-                <li><a href="#" onClick={toggleMenu}>?</a></li>
+                <li><a href="#Skills" onClick={toggleMenu}>Mes Compétences</a></li>
                 <li><a href="#" onClick={toggleMenu}>?</a></li>
                 <li><a href="#" onClick={toggleMenu}>?</a></li>
                 <li><a href="#" onClick={toggleMenu}>?</a></li>
