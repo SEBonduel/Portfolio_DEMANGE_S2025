@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import "@fontsource/space-grotesk";
+import "@fontsource/orbitron";
 
 const about = "src/assets/icons/user.svg";
 const projects = "src/assets/icons/projects.svg";

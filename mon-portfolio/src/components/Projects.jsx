@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "@fontsource/orbitron";
+import "@fontsource/space-grotesk";
 
 const projects = [
   {

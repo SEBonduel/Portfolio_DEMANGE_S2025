@@ -5,6 +5,7 @@ import { FaFilePdf } from 'react-icons/fa';
 import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa";
 import { PiMouseSimpleThin } from "react-icons/pi";
 import "@fontsource/orbitron";
+import "@fontsource/space-grotesk";
 
 const Home = () => {
   const originalText = "Sébastien Demange";
@@ -54,7 +55,7 @@ const Home = () => {
         </motion.h1>
 
         <motion.p
-          className="mt-4 mb-10 text-xl md:text-2xl text-gray-300"
+          className="mt-4 mb-10 text-xl md:text-2xl text-gray-300 font-sans"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -126,22 +127,22 @@ const Home = () => {
         transition={{ delay: 1, duration: 1.5 }}>
 
         <p className="text-start text-3xl w-full font-orbitron font-bold z-50 mb-4">À propos de moi</p>
-        <p className="text-gray-200 text-start z-50 leading-relaxed mb-4">Passionné de développement d&#39;application web, de musique, 
+        <p className="text-gray-200 text-start z-50 leading-relaxed mb-3 font-sans">Passionné de développement d&#39;application web, de musique, 
           de guitare et de production vidéos musicales âgé de 25 ans. Depuis que j&#39;ai commencé à apprendre le développement web en 2021
           dans le cadre de mon BTS, j&#39;ai été fasciné par les possibilités et les opportunités qu&#39;offre ce domaine passionnant.</p>
 
-        <p className="text-gray-200 text-start z-50 leading-relaxed mb-4">Depuis lors, j&#39;ai travaillé dur pour développer mes compétences en 
+        <p className="text-gray-200 text-start z-50 leading-relaxed mb-3 font-sans">Depuis lors, j&#39;ai travaillé dur pour développer mes compétences en 
           développement web et j&#39;ai décidé que je voulais faire de cette passion mon métier.</p> 
 
-        <p className="text-gray-200 text-start z-50 leading-relaxed mb-4">Mon portfolio est un témoignage de mon parcours jusqu&#39;à présent, ainsi que de mes projets et réalisations en développement web.
+        <p className="text-gray-200 text-start z-50 leading-relaxed mb-3 font-sans">Mon portfolio est un témoignage de mon parcours jusqu&#39;à présent, ainsi que de mes projets et réalisations en développement web.
           En parcourant mon portfolio, vous pourrez voir mes compétences en développement web à travers divers projets, 
           vous pourrez trouver mes réseaux comme LinkedIn ainsi que mon GitHub.</p>
 
-        <p className="text-gray-200 text-start z-50 leading-relaxed mb-4"> Je suis fier de ce que j&#39;ai accompli jusqu&#39;à présent,
+        <p className="text-gray-200 text-start z-50 leading-relaxed mb-3 font-sans"> Je suis fier de ce que j&#39;ai accompli jusqu&#39;à présent,
           mais je suis également impatient de continuer à développer mes compétences et à explorer de nouveaux projets et domaines 
           d&#39;intérêt.</p>
 
-        <p className="text-gray-200 text-start z-50 leading-relaxed">Si vous êtes intéressé à travailler avec moi ou à explorer de nouvelles opportunités de collaboration, n&#39;hésitez pas à me contacter.
+        <p className="text-gray-200 text-start z-50 leading-relaxed font-sans">Si vous êtes intéressé à travailler avec moi ou à explorer de nouvelles opportunités de collaboration, n&#39;hésitez pas à me contacter.
           Merci de prendre le temps de découvrir mon portfolio, 
           j&#39;espère que vous apprécierez ce que vous y trouverez et que vous serez inspiré par mes projets et mes réalisations.</p>
       </motion.div>

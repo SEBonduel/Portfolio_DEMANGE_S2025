@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         orbitron: ['Orbitron '],
+        sans: ["Space Grotesk", "sans-serif"],
       },
       colors: {
         neon: '#00e5ff',
