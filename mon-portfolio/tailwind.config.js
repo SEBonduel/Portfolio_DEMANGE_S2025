@@ -6,7 +6,6 @@ export default {
       fontFamily: {
         orbitron: ['Orbitron '],
         sans: ["Space Grotesk", "sans-serif"],
-        audiowide: ["Audiowide", "cursive"],
       },
       colors: {
         neon: '#00e5ff',
