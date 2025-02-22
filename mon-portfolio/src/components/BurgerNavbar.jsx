@@ -14,7 +14,7 @@ const BurgerNavbar = () => {
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
-    <div className="relative">
+    <div className="relative font-sans">
       <button
         onClick={toggleMenu}
         className="p-3 rounded-full bg-black bg-opacity-30 text-white fixed top-5 left-3 z-[9999]"

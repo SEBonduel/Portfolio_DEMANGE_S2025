@@ -57,7 +57,7 @@ const Projects = () => {
   return (
     <section className="bg-black w-screen min-h-screen text-gray-300 flex flex-col items-center justify-center p-8 pb-16 shadow-[0_20px_350px_rgba(0,0,0,1)] "id="Project">
       <motion.h2
-        className="text-4xl md:text-6xl font-medium font-orbitron  mb-8 mt-8"
+        className="text-4xl md:text-5xl font-medium font-orbitron  mb-8 mt-8"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -65,7 +65,7 @@ const Projects = () => {
         Mes Projets
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-9xl mt-10 mb-10 ml-8 mr-8 pl-8 pr-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-9xl mt-10 mb-10 ml-8 mr-8 pl-8 pr-8 font-sans">
         {projects.map((project, index) => (
           <motion.div
             key={index}

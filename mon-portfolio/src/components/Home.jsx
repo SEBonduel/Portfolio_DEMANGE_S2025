@@ -7,6 +7,7 @@ import { PiMouseSimpleThin } from "react-icons/pi";
 import "@fontsource/orbitron";
 import "@fontsource/space-grotesk";
 
+
 const Home = () => {
   const originalText = "Sébastien Demange";
   const [glitchText, setGlitchText] = useState(originalText);
@@ -46,19 +47,19 @@ const Home = () => {
       <div className="absolute inset-0 bg-black opacity-40 z-1"></div>
       <div className="flex flex-col items-start justify-center md:w-[650px] mb-8 mr-8 z-50">
         <motion.h1
-          className="text-xl md:text-6xl font-bold text-glitch relative"
+          className="text-xl md:text-5xl font-bold text-glitch relative font-orbitron"
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 1 }}
+          transition={{ delay: 3, duration: 1 }}
         >
           {glitchText}
         </motion.h1>
 
         <motion.p
-          className="mt-4 mb-10 text-xl md:text-2xl text-gray-300 font-sans"
+          className="mt-4 mb-8 text-xl md:text-2xl text-gray-300 font-sans"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 1 }}
+          transition={{ delay: 3, duration: 1 }}
         >
           Développeur Web Full-Stack
         </motion.p>
@@ -67,7 +68,7 @@ const Home = () => {
           className="flex space-x-6 mt-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 1 }}
+          transition={{ delay: 3, duration: 1 }}
         >
           <motion.a
             href="https://www.linkedin.com/in/s%C3%A9bastien-demange-5a4b03243/" 
@@ -76,7 +77,7 @@ const Home = () => {
             className="text-gray-300 hover:text-blue-500 hover:scale-110 text-3xl transition-all duration-300"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.5, duration: 2 }}
+            transition={{ delay: 3, duration: 0.2 }}
 
           >
             <FaLinkedin />
@@ -87,7 +88,7 @@ const Home = () => {
             className="text-gray-300 hover:text-red-500 text-3xl hover:scale-110 transition-all duration-300"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2, duration: 2 }}
+            transition={{ delay: 3.5, duration: 0.2 }}
           >
           <FaEnvelope />
           </motion.a>
@@ -99,7 +100,7 @@ const Home = () => {
             className="text-gray-300 hover:text-green-500 text-3xl hover:scale-110 transition-all duration-300"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2.5, duration: 2 }}
+            transition={{ delay: 4, duration: 0.2 }}
           >
           <FaGithub />
           </motion.a>
@@ -112,7 +113,7 @@ const Home = () => {
             className="text-gray-300 hover:text-purple-500 text-3xl hover:scale-110 transition-all duration-300"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 3, duration: 2 }}
+            transition={{ delay: 4.5, duration: 0.2 }}
           >
           <FaFilePdf />
 
@@ -124,7 +125,7 @@ const Home = () => {
         className="flex flex-col items-center justify-start mb-8 ml-8 bg-black bg-opacity-60 p-8 rounded-lg w-[625px] z-2"
         initial={{ opacity: 0, y:-100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 1.5 }}>
+        transition={{ delay: 3, duration: 2 }}>
 
         <p className="text-start text-3xl w-full font-orbitron font-bold z-50 mb-4">À propos de moi</p>
         <p className="text-gray-200 text-start z-50 leading-relaxed mb-3 font-sans">Passionné de développement d&#39;application web, de musique, 
@@ -151,7 +152,7 @@ const Home = () => {
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
         initial={{ opacity: 0 }}
         animate={{ y: [0, 10, 0],  opacity: 1 }}
-        transition={{ repeat: Infinity, duration: 2, delay:2 }}
+        transition={{ repeat: Infinity, duration: 2, delay:3 }}
         onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
         cursor="pointer"
       >

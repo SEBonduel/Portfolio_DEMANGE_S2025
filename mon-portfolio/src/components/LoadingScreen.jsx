@@ -51,12 +51,12 @@ export default function LoadingScreen({ onComplete }) {
           </div>
           
           <motion.h1
-            className="text-4xl md:text-6xl font-bold glitch relative z-10 flex items-center"
+            className="text-4xl md:text-6xl font-bold glitch relative z-10 flex items-center mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            Loading
+            Chargement
             <motion.span
               className="inline-block"
               animate={{ y: [0, -5, 0] }}
