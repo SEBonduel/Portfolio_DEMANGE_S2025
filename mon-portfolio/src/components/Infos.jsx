@@ -10,7 +10,7 @@ const infos = [
   {
     icon: <FaGlobe className="text-4xl text-neon" />, 
     title: "Langues",
-    description: "Français (natif), Anglais (B1)",
+    description: "Français (natif), Anglais (B1), Allemand (A2)",
   },
   {
     icon: <FaUserCheck className="text-4xl text-neon" />, 
@@ -22,7 +22,6 @@ const infos = [
 const Infos = () => {
   return (
     <section className="relative bg-black w-screen min-h-screen text-gray-300 flex flex-col items-center justify-center p-8 pb-16 overflow-hidden" id="Infos">
-      {/* Effet lumineux animé en arrière-plan moins intense */}
       <motion.div 
         className="absolute inset-0 bg-gradient-to-br from-gray-800/30 via-purple-800/30 to-gray-800/30  blur-3xl opacity-40 animate-pulse-slow"
         initial={{ opacity: 0 }}
@@ -30,7 +29,6 @@ const Infos = () => {
         transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse" }}
       />
       
-      {/* Titre animé avec effet d'apparition en scroll */}
       <motion.h2
         className="text-4xl md:text-5xl font-medium font-orbitron mb-8 mt-8 uppercase relative z-10"
         initial={{ opacity: 0, y: -50 }}
