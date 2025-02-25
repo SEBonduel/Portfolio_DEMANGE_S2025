@@ -127,7 +127,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 3, duration: 2 }}>
 
-        <p className="text-start text-3xl w-full font-orbitron font-bold z-50 mb-4">À propos de moi</p>
+        <p className="text-start text-3xl w-full font-orbitron font-bold z-50 mb-4 uppercase">À propos de moi</p>
         <p className="text-gray-200 text-start z-50 leading-relaxed mb-3 font-sans">Passionné de développement d&#39;application web, de musique, 
           de guitare et de production vidéos musicales âgé de 25 ans. Depuis que j&#39;ai commencé à apprendre le développement web en 2021
           dans le cadre de mon BTS, j&#39;ai été fasciné par les possibilités et les opportunités qu&#39;offre ce domaine passionnant.</p>
@@ -143,9 +143,8 @@ const Home = () => {
           mais je suis également impatient de continuer à développer mes compétences et à explorer de nouveaux projets et domaines 
           d&#39;intérêt.</p>
 
-        <p className="text-gray-200 text-start z-50 leading-relaxed font-sans">Si vous êtes intéressé à travailler avec moi ou à explorer de nouvelles opportunités de collaboration, n&#39;hésitez pas à me contacter.
-          Merci de prendre le temps de découvrir mon portfolio, 
-          j&#39;espère que vous apprécierez ce que vous y trouverez et que vous serez inspiré par mes projets et mes réalisations.</p>
+        <p className="text-gray-200 text-start z-50 leading-relaxed font-sans">Si vous êtes intéressé, n&#39;hésitez pas à me contacter.
+          Merci et bonne visite.</p>
       </motion.div>
 
       <motion.div

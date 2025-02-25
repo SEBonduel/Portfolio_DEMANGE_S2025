@@ -7,6 +7,8 @@ const about = "src/assets/icons/user.svg";
 const projects = "src/assets/icons/projects.svg";
 const skills = "src/assets/icons/skills.svg";
 const contact = "src/assets/icons/contact.svg"; 
+const infos = "src/assets/icons/infos.svg"; 
+const background = "src/assets/icons/parcours.svg"; 
 
 const BurgerNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,18 +46,18 @@ const BurgerNavbar = () => {
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className="fixed inset-y-0 left-0 w-[350px] bg-black bg-opacity-90 text-white shadow-lg z-[9998]"
+            className="fixed inset-y-0 left-0 w-[480px] bg-black bg-opacity-90 text-white shadow-lg z-[9998]"
           >
             <div className="p-7 ml-6">
               
-              <h2 className="text-2xl mb-8"> Sébastien Demange</h2>
-              <ul className="space-y-4 text-start ml-8 flex flex-col">
-                <li><a href="#About" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={about} className="w-8 h-8 mr-2"/>À Propos de moi</a></li>
-                <li><a href="#Project" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={projects} className="w-8 h-8 mr-2" />Mes Projets</a></li>
-                <li><a href="#Skills" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={skills}  className="w-8 h-8 mr-2" />Mes Compétences</a></li>
-                <li><a href="#Contact" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={contact}  className="w-8 h-8 mr-2" />Me Contacter</a></li>
-                <li><a href="#" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'>?</a></li>
-                <li><a href="#" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'>?</a></li>
+              <h2 className="text-2xl mb-12 uppercase"> Sébastien Demange</h2>
+              <ul className="space-y-6 text-start ml-8 flex flex-col">
+                <li><a href="#About" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={about} className="w-8 h-8 mr-4"/>À Propos de moi</a></li>
+                <li><a href="#Project" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={projects} className="w-8 h-8 mr-4" />Mes Projets</a></li>
+                <li><a href="#Skills" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={skills}  className="w-8 h-8 mr-4" />Mes Compétences</a></li>
+                <li><a href="#Background" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={background}  className="w-8 h-8 mr-4" />Parcours Académique</a></li>
+                <li><a href="#Infos" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={infos}  className="w-8 h-8 mr-4" />Informations complémentaires</a></li>
+                <li><a href="#Contact" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={contact}  className="w-8 h-8 mr-4" />Me Contacter</a></li>
               </ul>
             </div>
           </motion.div>
