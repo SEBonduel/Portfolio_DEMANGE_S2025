@@ -12,7 +12,7 @@ const Background = () => {
   ];
 
   return (
-    <section id="Background">
+    <section id="Background" className="overflow-x-hidden">
       <div className="relative flex flex-col items-center justify-center min-h-screen bg-black py-12 px-4 md:px-8">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 opacity-30"></div>
 
@@ -33,7 +33,7 @@ const Background = () => {
               className="relative flex w-full mb-12 pb-4"
             >
               <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cyan-400 rounded-full border-4 border-black animate-pulse shadow-lg"></div>
-              <div className={`w-full md:w-5/6 p-6 bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg text-white 
+              <div className={`max-w-[90%] md:w-5/6 p-6 bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg text-white 
                   ${index % 2 === 0 ? "ml-auto text-right" : "mr-auto text-left"} 
                 `}
               >
