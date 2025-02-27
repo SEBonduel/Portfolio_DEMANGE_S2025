@@ -30,7 +30,7 @@ const Infos = () => {
       />
       
       <motion.h2
-        className="text-xl md:text-3xl font-medium font-orbitron mb-8 mt-8 uppercase relative z-10"
+        className="text-xl md:text-3xl font-medium font-orbitron mb-24 mt-8 uppercase relative z-10"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
