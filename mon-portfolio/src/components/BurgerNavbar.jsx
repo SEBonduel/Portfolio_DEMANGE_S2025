@@ -3,12 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import "@fontsource/space-grotesk";
 import "@fontsource/orbitron";
 
-const about = "src/assets/icons/user.svg";
-const projects = "src/assets/icons/projects.svg";
-const skills = "src/assets/icons/skills.svg";
-const contact = "src/assets/icons/contact.svg"; 
-const infos = "src/assets/icons/infos.svg"; 
-const background = "src/assets/icons/parcours.svg"; 
+import about from 'src/assets/icons/user.svg';
+import projects from 'src/assets/icons/projects.svg';
+import skills from 'src/assets/icons/skills.svg';
+import contact from 'src/assets/icons/contact.svg';
+import infos from 'src/assets/icons/infos.svg';
+import background from 'src/assets/icons/parcours.svg';
 
 const BurgerNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
