@@ -21,7 +21,7 @@ const infos = [
 
 const Infos = () => {
   return (
-    <section className="relative bg-black w-full min-h-screen h-[100vh] text-gray-300 flex flex-col items-center justify-center p-8 pb-16 overflow-hidden" id="Infos">
+    <section className="relative bg-black w-full min-h-screen h-[auto] text-gray-300 flex flex-col items-center justify-center p-8 pb-16 overflow-hidden" id="Infos">
       <motion.div 
         className="absolute inset-0 bg-gradient-to-br from-gray-800/30 via-purple-800/30 to-gray-800/30  blur-3xl opacity-40 animate-pulse-slow"
         initial={{ opacity: 0 }}
