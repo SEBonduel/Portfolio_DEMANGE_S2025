@@ -1,7 +1,7 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaVuejs, FaPhp, FaJava, FaDocker, FaGit, FaGithub, FaSass } from 'react-icons/fa';
 import { SiTailwindcss, SiBootstrap, SiMysql, SiMongodb, SiFlutter, SiFigma , SiScrumalliance } from 'react-icons/si';
-const csharpIcon = "src/assets/icons/csharp.svg";
-const vscodeIcon = "src/assets/icons/vscode.svg";
+import csharpIcon from "../assets/icons/csharp.svg";
+import vscodeIcon from "../assets/icons/vscode.svg";
 import "@fontsource/space-grotesk";
 
 const skills = [
