@@ -62,7 +62,7 @@ const Projects = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-3xl opacity-30" />
       
       <motion.h2
-        className="text-3xl md:text-4xl lg:text-5xl font-medium font-orbitron uppercase mb-12 text-center"
+        className="text-2xl md:text-4xl font-medium font-orbitron uppercase mb-12 text-center"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
