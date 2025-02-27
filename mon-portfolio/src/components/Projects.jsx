@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Portfolio 2024",
     description: "Mon 2ème portfolio, avec animations dynamiques en HTML, CSS et JavaScript.",
-    link: "https://sebastiendemange.netlify.app",
+    link: "https://sebastiendemange2k24.netlify.app",
     image: "/Medias/portfolio2024.png",
   },
   {
