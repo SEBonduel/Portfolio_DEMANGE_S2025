@@ -101,14 +101,14 @@ const Home = () => {
         transition={{ delay: 3, duration: 2 }}>
         <p className="text-2xl font-orbitron font-bold mb-4 uppercase">À propos de moi</p>
         <p className="text-gray-200 text-sm sm:text-base leading-relaxed">
-          Passionné de développement web, musique, guitare et production vidéo, j’ai commencé mon parcours en 2021 dans le cadre de mon BTS.
-          Depuis, j’ai travaillé dur pour perfectionner mes compétences et transformer cette passion en carrière.
+          {`Passionné de développement web, musique, guitare et production vidéo, j’ai commencé mon parcours en 2021 dans le cadre de mon BTS.
+          Depuis, j’ai travaillé dur pour perfectionner mes compétences et transformer cette passion en carrière.`}
         </p>
         <p className="text-gray-200 text-sm sm:text-base leading-relaxed mt-3">
-          Mon portfolio témoigne de mon parcours, mes projets et mes compétences en développement web. Vous y trouverez également mes liens professionnels.
+          {`Mon portfolio témoigne de mon parcours, mes projets et mes compétences en développement web. Vous y trouverez également mes liens professionnels.`}
         </p>
         <p className="text-gray-200 text-sm sm:text-base leading-relaxed mt-3">
-          Je suis toujours en quête d’apprentissage et d’amélioration. Si vous êtes intéressé, n’hésitez pas à me contacter. Bonne visite !
+          {`Je suis toujours en quête d’apprentissage et d’amélioration. Si vous êtes intéressé, n’hésitez pas à me contacter. Bonne visite !`}
         </p>
       </motion.div>
 

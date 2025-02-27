@@ -38,7 +38,7 @@ const Contact = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-0"></div>
 
       <motion.div
-        className="relative z-10 w-full max-w-sm sm:max-w-lg bg-black/60 p-4 sm:p-6 rounded-2xl shadow-lg backdrop-blur-md"
+        className="relative z-10 w-full max-w-sm sm:max-w-xl bg-black/60 p-4 sm:p-6 rounded-2xl shadow-lg backdrop-blur-md"
         style={{ transform: `translateY(${offsetY}px)` }}
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
