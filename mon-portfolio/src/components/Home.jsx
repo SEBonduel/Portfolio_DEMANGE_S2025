@@ -1,12 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { FaFilePdf } from 'react-icons/fa';
-import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa";
+import { FaFilePdf, FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa";
 import { PiMouseSimpleThin } from "react-icons/pi";
 import "@fontsource/orbitron";
 import "@fontsource/space-grotesk";
-
 
 const Home = () => {
   const originalText = "Sébastien Demange";
@@ -21,9 +19,7 @@ const Home = () => {
         setGlitchText((prev) =>
           originalText
             .split("")
-            .map((char, index) =>
-              Math.random() > 0.9 ? chars[Math.floor(Math.random() * chars.length)] : char
-            )
+            .map((char) => (Math.random() > 0.9 ? chars[Math.floor(Math.random() * chars.length)] : char))
             .join("")
         );
 
@@ -36,18 +32,16 @@ const Home = () => {
     };
 
     const glitchInterval = setInterval(glitchEffect, 1800);
-
-    return () => {
-      clearInterval(glitchInterval);
-    };
+    return () => clearInterval(glitchInterval);
   }, []);
 
   return (
-    <section className="flex flex-row items-center justify-center w-screen h-screen bg-[url('../Medias/background-pc.jpg')] bg-cover bg-center bg-no-repeat" id="About"> 
-      <div className="absolute inset-0 bg-black opacity-40 z-1"></div>
-      <div className="flex flex-col items-start justify-center md:w-[650px] mb-8 mr-8 z-50">
+    <section className="flex flex-col items-center justify-center w-screen min-h-screen px-6 py-12 lg:flex-row lg:h-screen bg-[url('../Medias/background-pc.jpg')] bg-cover bg-center bg-no-repeat relative" id="About"> 
+      <div className="absolute inset-0 bg-black opacity-40"></div>
+      
+      <div className="flex flex-col items-center text-center lg:items-start lg:text-left justify-center w-full max-w-[700px] mb-8 px-6 lg:pl-8 z-50">
         <motion.h1
-          className="text-xl md:text-5xl font-bold text-glitch relative font-orbitron"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-glitch font-orbitron"
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3, duration: 1 }}
@@ -56,7 +50,7 @@ const Home = () => {
         </motion.h1>
 
         <motion.p
-          className="mt-4 mb-8 text-xl md:text-2xl text-gray-300 font-sans"
+          className="mt-4 mb-8 text-gray-300 text-sm sm:text-base lg:text-xl font-sans"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3, duration: 1 }}
@@ -64,98 +58,66 @@ const Home = () => {
           Développeur Web Full-Stack
         </motion.p>
 
-        <motion.div
-          className="flex space-x-6 mt-4"
+        <motion.div className="flex space-x-6 mt-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 3, duration: 1 }}
-        >
-          <motion.a
-            href="https://www.linkedin.com/in/s%C3%A9bastien-demange-5a4b03243/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-gray-300 hover:text-blue-500 hover:scale-110 text-3xl transition-all duration-300"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 3, duration: 0.2 }}
-
-          >
-            <FaLinkedin />
-          </motion.a>
-
-          <motion.a 
-            href="mailto:sebastien050599@hotmail.fr" 
-            className="text-gray-300 hover:text-red-500 text-3xl hover:scale-110 transition-all duration-300"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 3.5, duration: 0.2 }}
-          >
-          <FaEnvelope />
-          </motion.a>
-
-          <motion.a
-            href="https://github.com/SEBonduel" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-gray-300 hover:text-green-500 text-3xl hover:scale-110 transition-all duration-300"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 4, duration: 0.2 }}
-          >
-          <FaGithub />
-          </motion.a>
-
-          <motion.a
-            href="../Medias/CV_Demange_Sebastien.pdf"
-            download
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-purple-500 text-3xl hover:scale-110 transition-all duration-300"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 4.5, duration: 0.2 }}
-          >
-          <FaFilePdf />
-
-          </motion.a>
+          transition={{ delay: 3, duration: 1 }}>
+          {[{
+            href: "https://www.linkedin.com/in/s%C3%A9bastien-demange-5a4b03243/",
+            icon: <FaLinkedin />,
+            color: "hover:text-blue-500"
+          }, {
+            href: "mailto:sebastien050599@hotmail.fr",
+            icon: <FaEnvelope />,
+            color: "hover:text-red-500"
+          }, {
+            href: "https://github.com/SEBonduel",
+            icon: <FaGithub />,
+            color: "hover:text-green-500"
+          }, {
+            href: "../Medias/CV_Demange_Sebastien.pdf",
+            icon: <FaFilePdf />,
+            color: "hover:text-purple-500"
+          }].map(({ href, icon, color }, index) => (
+            <motion.a
+              key={index}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-gray-300 ${color} text-2xl sm:text-3xl md:text-4xl hover:scale-110 transition-all duration-300`}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 3 + (index * 0.5), duration: 0.2 }}
+            >
+              {icon}
+            </motion.a>
+          ))}
         </motion.div>
       </div>
 
-      <motion.div 
-        className="flex flex-col items-center justify-start mb-8 ml-8 bg-black bg-opacity-60 p-8 rounded-lg w-[625px] z-2"
+      <motion.div className="flex flex-col items-center text-center lg:text-left bg-black bg-opacity-60 p-6 sm:p-8 rounded-lg w-full max-w-[625px] mx-4 z-50" 
         initial={{ opacity: 0, y:-100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 3, duration: 2 }}>
-
-        <p className="text-start text-3xl w-full font-orbitron font-bold z-50 mb-4 uppercase">À propos de moi</p>
-        <p className="text-gray-200 text-start z-50 leading-relaxed mb-3 font-sans">Passionné de développement d&#39;application web, de musique, 
-          de guitare et de production vidéos musicales âgé de 25 ans. Depuis que j&#39;ai commencé à apprendre le développement web en 2021
-          dans le cadre de mon BTS, j&#39;ai été fasciné par les possibilités et les opportunités qu&#39;offre ce domaine passionnant.</p>
-
-        <p className="text-gray-200 text-start z-50 leading-relaxed mb-3 font-sans">Depuis lors, j&#39;ai travaillé dur pour développer mes compétences en 
-          développement web et j&#39;ai décidé que je voulais faire de cette passion mon métier.</p> 
-
-        <p className="text-gray-200 text-start z-50 leading-relaxed mb-3 font-sans">Mon portfolio est un témoignage de mon parcours jusqu&#39;à présent, ainsi que de mes projets et réalisations en développement web.
-          En parcourant mon portfolio, vous pourrez voir mes compétences en développement web à travers divers projets, 
-          vous pourrez trouver mes réseaux comme LinkedIn ainsi que mon GitHub.</p>
-
-        <p className="text-gray-200 text-start z-50 leading-relaxed mb-3 font-sans"> Je suis fier de ce que j&#39;ai accompli jusqu&#39;à présent,
-          mais je suis également impatient de continuer à développer mes compétences et à explorer de nouveaux projets et domaines 
-          d&#39;intérêt.</p>
-
-        <p className="text-gray-200 text-start z-50 leading-relaxed font-sans">Si vous êtes intéressé, n&#39;hésitez pas à me contacter.
-          Merci et bonne visite.</p>
+        <p className="text-2xl font-orbitron font-bold mb-4 uppercase">À propos de moi</p>
+        <p className="text-gray-200 text-sm sm:text-base leading-relaxed">
+          Passionné de développement web, musique, guitare et production vidéo, j’ai commencé mon parcours en 2021 dans le cadre de mon BTS.
+          Depuis, j’ai travaillé dur pour perfectionner mes compétences et transformer cette passion en carrière.
+        </p>
+        <p className="text-gray-200 text-sm sm:text-base leading-relaxed mt-3">
+          Mon portfolio témoigne de mon parcours, mes projets et mes compétences en développement web. Vous y trouverez également mes liens professionnels.
+        </p>
+        <p className="text-gray-200 text-sm sm:text-base leading-relaxed mt-3">
+          Je suis toujours en quête d’apprentissage et d’amélioration. Si vous êtes intéressé, n’hésitez pas à me contacter. Bonne visite !
+        </p>
       </motion.div>
 
-      <motion.div
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+      <motion.div className="absolute bottom-10 transform -translate-x-1/2 cursor-pointer"
         initial={{ opacity: 0 }}
-        animate={{ y: [0, 10, 0],  opacity: 1 }}
-        transition={{ repeat: Infinity, duration: 2, delay:3 }}
-        onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
-        cursor="pointer"
-      >
-        <PiMouseSimpleThin className="text-7xl text-gray-300 hover:cursor-pointer hover:scale-110 transition-all hover:text-green-500" />
+        animate={{ y: [0, 10, 0], opacity: 1 }}
+        transition={{ repeat: Infinity, duration: 2, delay: 3 }}
+        onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}>
+        <PiMouseSimpleThin className="text-5xl sm:text-6xl text-gray-300 hover:text-green-500 hover:scale-110 transition-all z-50" />
       </motion.div>
     </section>
   );

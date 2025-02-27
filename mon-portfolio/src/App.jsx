@@ -6,6 +6,8 @@ import LoadingScreen from './components/LoadingScreen'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Infos from './components/Infos'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Skills />
       <Background />
       <Infos />
+      <Contact />
+      <Footer />  
     </>
   )
 }

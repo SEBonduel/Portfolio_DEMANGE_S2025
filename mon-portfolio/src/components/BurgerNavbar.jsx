@@ -17,11 +17,13 @@ const BurgerNavbar = () => {
 
   return (
     <div className="relative font-sans">
+      {/* Bouton Burger */}
       <button
         onClick={toggleMenu}
-        className="p-3 rounded-full bg-black bg-opacity-30 text-white fixed top-5 left-3 z-[9999]"
+        className="p-3 rounded-full bg-black bg-opacity-30 text-white fixed top-5 left-3 z-[9999] sm:top-7 sm:left-5"
+        aria-label="Ouvrir le menu"
       >
-        <div className="relative w-6 h-6 mt-1 ml-1 mr-1 ">
+        <div className="relative w-6 h-6">
           <motion.div
             animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 8 : 0 }}
             className="absolute w-6 h-0.5 bg-white"
@@ -37,8 +39,10 @@ const BurgerNavbar = () => {
         </div>
       </button>
 
+      {/* Overlay du menu */}
       {isOpen && <div className="fixed inset-0 bg-black/30 backdrop-blur-md z-[100]" onClick={toggleMenu} />}
-    
+
+      {/* Menu latéral */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -46,18 +50,17 @@ const BurgerNavbar = () => {
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className="fixed inset-y-0 left-0 w-[480px] bg-black bg-opacity-90 text-white shadow-lg z-[9998]"
+            className="fixed inset-y-0 left-0 w-[80%] max-w-[480px] bg-black bg-opacity-90 text-white shadow-lg z-[9998] sm:w-[60%] md:w-[50%] lg:w-[30%]"
           >
-            <div className="p-7 ml-6">
-              
-              <h2 className="text-2xl mb-12 uppercase"> Sébastien Demange</h2>
-              <ul className="space-y-6 text-start ml-8 flex flex-col">
-                <li><a href="#About" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={about} className="w-8 h-8 mr-4"/>À Propos de moi</a></li>
-                <li><a href="#Project" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={projects} className="w-8 h-8 mr-4" />Mes Projets</a></li>
-                <li><a href="#Skills" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={skills}  className="w-8 h-8 mr-4" />Mes Compétences</a></li>
-                <li><a href="#Background" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={background}  className="w-8 h-8 mr-4" />Parcours Académique</a></li>
-                <li><a href="#Infos" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={infos}  className="w-8 h-8 mr-4" />Informations complémentaires</a></li>
-                <li><a href="#Contact" onClick={toggleMenu} className='flex flex-row items-center hover:text-green-500 transition-all text-xl'><img src={contact}  className="w-8 h-8 mr-4" />Me Contacter</a></li>
+            <div className="p-6">
+              <h2 className="text-xl sm:text-2xl mb-10 uppercase">Sébastien Demange</h2>
+              <ul className="space-y-6 text-start flex flex-col">
+                <li><a href="#About" onClick={toggleMenu} className="flex items-center hover:text-green-500 transition-all text-lg sm:text-xl"><img src={about} className="w-6 h-6 sm:w-8 sm:h-8 mr-4"/>À Propos de moi</a></li>
+                <li><a href="#Project" onClick={toggleMenu} className="flex items-center hover:text-green-500 transition-all text-lg sm:text-xl"><img src={projects} className="w-6 h-6 sm:w-8 sm:h-8 mr-4"/>Mes Projets</a></li>
+                <li><a href="#Skills" onClick={toggleMenu} className="flex items-center hover:text-green-500 transition-all text-lg sm:text-xl"><img src={skills} className="w-6 h-6 sm:w-8 sm:h-8 mr-4"/>Mes Compétences</a></li>
+                <li><a href="#Background" onClick={toggleMenu} className="flex items-center hover:text-green-500 transition-all text-lg sm:text-xl"><img src={background} className="w-6 h-6 sm:w-8 sm:h-8 mr-4"/>Parcours Académique</a></li>
+                <li><a href="#Infos" onClick={toggleMenu} className="flex items-center hover:text-green-500 transition-all text-lg sm:text-xl"><img src={infos} className="w-6 h-6 sm:w-8 sm:h-8 mr-4"/>Informations complémentaires</a></li>
+                <li><a href="#Contact" onClick={toggleMenu} className="flex items-center hover:text-green-500 transition-all text-lg sm:text-xl"><img src={contact} className="w-6 h-6 sm:w-8 sm:h-8 mr-4"/>Me Contacter</a></li>
               </ul>
             </div>
           </motion.div>

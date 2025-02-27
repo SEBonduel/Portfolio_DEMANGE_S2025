@@ -55,7 +55,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="relative bg-black w-screen min-h-screen text-gray-300 flex flex-col items-center justify-center p-8 pb-16 shadow-[0_20px_350px_rgba(0,0,0,1)]"id="Project">
+    <section className="relative bg-black w-screen min-h-screen text-gray-300 flex flex-col items-center justify-center p-8 pb-16 shadow-[0_20px_350px_rgba(0,0,0,1)] w-full"id="Project">
        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-3xl opacity-30"/>
       <motion.h2
         className="text-4xl md:text-5xl font-medium font-orbitron uppercase mb-8 mt-8"
