@@ -117,7 +117,7 @@ const Home = () => {
         animate={{ y: [0, 10, 0], opacity: 1 }}
         transition={{ repeat: Infinity, duration: 2, delay: 3 }}
         onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}>
-        <PiMouseSimpleThin className="text-5xl sm:text-6xl text-gray-300 hover:text-green-500 hover:scale-110 transition-all z-50" />
+        <PiMouseSimpleThin className="text-5xl sm:text-6xl text-gray-300 hover:text-green-500 hover:scale-110 transition-all z-50 mb-16 hidden sm:block" />
       </motion.div>
     </section>
   );
